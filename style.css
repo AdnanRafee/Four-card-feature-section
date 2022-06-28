@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: hsl(0, 0%, 98%);
+    font-family: "Poppins", sans-serif;
+
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.header {
+    margin: 0 auto;
+    /* width: 900px; */
+    color: brown;
+    display: block;
+    text-align: center;
+    font-size: 20px;
+    margin-top: 3rem;
+    font-weight: 200;
+    color: hsl(234, 12%, 34%);
+    padding-bottom: 35px;
+}
+span {
+    font-weight: 200;
+    font-size: 30px;
+}
+p {
+    margin-top: 20px;
+    font-size: 15px;
+    font-weight: 400;
+    color: hsl(229, 6%, 66%);
+}
+.container {
+    /* height: calc(100vh - 219px); */
+    display: grid;
+    /* grid-template-rows: 1fr 1fr 1fr; */
+    grid-template-columns: 1fr 1fr 1fr;
+    /* gap: 20px; */
+
+    height: calc(100vh - 204px);
+    max-width: 1200px;
+    margin-top: 50px;
+
+    margin: 0 auto;
+    row-gap: 0;
+    column-gap: 0;
+}
+.box {
+    /* border: 2px solid red; */
+    /* height: 220px; */
+    padding: 25px;
+    text-align: right;
+    border-radius: 3%;
+    /* width: 350px; */
+    background-color: white;
+    box-shadow: 4px 7px 20px gray;
+    margin: 15px;
+
+    justify-self: center;
+}
+.box-text {
+    text-align: left;
+    padding-bottom: 15px;
+}
+.box1 {
+    border-top: 4px solid hsl(180, 62%, 55%);
+    justify-self: center;
+    /* margin-right: 0; */
+}
+.box2 {
+    border-top: 4px solid hsl(0, 78%, 62%);
+    justify-self: center;
+}
+.box3 {
+    border-top: 4px solid hsl(34, 97%, 64%);
+    /* margin-top: 20px; */
+}
+.box4 {
+    border-top: 4px solid hsl(212, 86%, 64%);
+    justify-self: center;
+}
+
+h5 {
+    font-size: 18px;
+    color: hsl(234, 12%, 34%);
+}
+.box p {
+    font-size: 15px;
+    margin-top: 5px;
+}
+.middle {
+    display: flex;
+    flex-direction: column;
+    /* gap: 25px; */
+    margin: 0 auto;
+}
+
+.box1,
+.box4 {
+    align-self: center;
+}
+img {
+    width: 50px;
+    padding-top: 28px;
+}
+@media only screen and (max-width: 768px) {
+    .container {
+        grid-template-columns: 1fr;
+        height: inherit;
+    }
+    .box {
+        min-width: 366px;
+    }
+    .box1,
+    .box4 {
+        width: 366px;
+    }
+    .middle {
+        width: 366px;
+        margin: 0 auto;
+        align-items: center;
+    }
+    .box4 {
+        margin-bottom: 30px;
+    }
+}
